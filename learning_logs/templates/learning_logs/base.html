@@ -1,7 +1,7 @@
 {% load bootstrap3 %}
 
 <!DOCTYPE html>
-<html lang ="en">
+<html lang ="ru">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,21 +23,21 @@
                             aria-expanded="false" aria-controls="navbar">
                     </button>
                     <a class="navbar-brand" href="{% url 'learning_logs:index' %}">
-                        Learning Log
+                        Что-то непонятное
                     </a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="{% url 'learning_logs:topics' %}">Topics</a></li>
+                        <li><a href="{% url 'learning_logs:topics' %}">Разделы</a></li>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
                         {% if user.is_authenticated %}
-                        <li><a>Hello, {{ user.username }}!</a></li>
-                        <li><a href="{% url 'users:logout' %}">log out</a></li>
+                        <li><a>Привет, {{ user.username }}!</a></li>
+                        <li><a href="{% url 'users:logout' %}">Выйти</a></li>
                         {% else %}
-                        <li><a href="{% url 'users:register' %}">register</a></li>
-                        <li><a href="{% url 'users:login' %}">log in</a></li>
+                        <li><a href="{% url 'users:register' %}">Регистрация</a></li>
+                        <li><a href="{% url 'users:login' %}">Войти</a></li>
                         {% endif %}
                     </ul>
                 </div><!--/.nav-collapse -->
