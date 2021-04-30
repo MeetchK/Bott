@@ -153,7 +153,8 @@ if os.getcwd() == '/app':
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Разрешены все заголовки постов
-ALLOWED_HOSTS = ['learning-log.herokuapp.com']
+ALLOWED_HOSTS = ['learnig-log.herokuapp.com']
+
 
 DEBUG = False
 
