@@ -1,1 +1,1 @@
-# Learning_log
+Просто играюсь с Django :)
